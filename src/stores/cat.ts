@@ -8,6 +8,10 @@ export interface CatStore {
     mouseMirror: boolean
     motionSound: boolean
     autoReleaseDelay: number
+    microphoneEnabled: boolean
+    microphoneSensitivity: number
+    microphoneThreshold: number
+    microphoneSmoothing: number
   }
   window: {
     visible: boolean
@@ -54,6 +58,10 @@ export const useCatStore = defineStore('cat', () => {
     mouseMirror: false,
     motionSound: true,
     autoReleaseDelay: 3,
+    microphoneEnabled: false,
+    microphoneSensitivity: 50,
+    microphoneThreshold: 30,
+    microphoneSmoothing: 70,
   })
 
   const window = reactive<CatStore['window']>({
