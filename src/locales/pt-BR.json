@@ -23,12 +23,7 @@
           "motionSound": "Som de Ação",
           "autoReleaseDelay": "Atraso de Liberação Automática",
           "hideOnHover": "Ocultar ao Passar o Mouse",
-          "position": "Posição da Janela",
-          "audioSettings": "Configurações de Áudio",
-          "microphoneEnabled": "Entrada de Microfone",
-          "microphoneSensitivity": "Sensibilidade do Microfone",
-          "microphoneThreshold": "Limiar de Ativação",
-          "microphoneSmoothing": "Suavização"
+          "position": "Posição da Janela"
         },
         "hints": {
           "mirrorMode": "Quando ativado, o modelo será invertido horizontalmente.",
@@ -40,11 +35,7 @@
           "windowSize": "Mova o mouse para a borda da janela ou segure Shift e arraste com o botão direito para redimensionar.",
           "autoReleaseDelay": "Devido ao Windows não capturar eventos de liberação de certas teclas de nível do sistema, elas serão automaticamente tratadas como liberadas após um tempo limite.",
           "hideOnHover": "Quando ativado, a janela será ocultada quando o mouse passar sobre ela.",
-          "position": "Entra em vigor após inicializar o aplicativo ou quando este parâmetro, o tamanho da janela, o modelo ou a resolução de tela é alterado.",
-          "microphoneEnabled": "Quando ativado, o modelo responderá ao volume de entrada do microfone.",
-          "microphoneSensitivity": "Ajuste a sensibilidade da entrada do microfone.",
-          "microphoneThreshold": "Ações do modelo são acionadas quando o volume atinge esse limiar.",
-          "microphoneSmoothing": "Controle a suavidade dos movimentos da boca para evitar tremores."
+          "position": "Entra em vigor após inicializar o aplicativo ou quando este parâmetro, o tamanho da janela, o modelo ou a resolução de tela é alterado."
         },
         "options": {
           "topLeft": "Canto Superior Esquerdo",

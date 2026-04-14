@@ -23,12 +23,7 @@
           "motionSound": "Motion Sound",
           "autoReleaseDelay": "Auto Release Delay",
           "hideOnHover": "Hide on Hover",
-          "position": "Window Position",
-          "audioSettings": "Audio Settings",
-          "microphoneEnabled": "Microphone Input",
-          "microphoneSensitivity": "Microphone Sensitivity",
-          "microphoneThreshold": "Activation Threshold",
-          "microphoneSmoothing": "Smoothing"
+          "position": "Window Position"
         },
         "hints": {
           "mirrorMode": "When enabled, the model will be mirrored horizontally.",
@@ -40,11 +35,7 @@
           "windowSize": "Move mouse to window edge, or hold Shift and right-drag to resize.",
           "autoReleaseDelay": "On Windows, some system keys cannot capture release events and will auto-release after timeout.",
           "hideOnHover": "When enabled, the window hides when mouse hovers over it.",
-          "position": "Takes effect after the app starts, or when this parameter, window size, model, or screen resolution changes.",
-          "microphoneEnabled": "When enabled, the model will respond to microphone input volume.",
-          "microphoneSensitivity": "Adjust the sensitivity of microphone input.",
-          "microphoneThreshold": "Model actions are triggered when volume reaches this threshold.",
-          "microphoneSmoothing": "Control the smoothness of mouth movements to avoid jitter."
+          "position": "Takes effect after the app starts, or when this parameter, window size, model, or screen resolution changes."
         },
         "options": {
           "topLeft": "Top Left",
