@@ -60,6 +60,11 @@ export function useMicrophone() {
       frequencyData.value = new Uint8Array(analyser.value.frequencyBinCount)
       timeDomainData.value = new Uint8Array(analyser.value.fftSize)
 
+      // 确保音频上下文处于运行状态
+      if (audioContext.value.state !== 'running') {
+        await audioContext.value.resume()
+      }
+
       // 开始音频分析循环
       startAudioAnalysis()
     } catch (error: any) {
@@ -201,14 +206,14 @@ export function useMicrophone() {
     } else {
       stopMicrophone()
     }
-  })
+  }, { immediate: true })
 
   // 监听平滑度变化
   watch(() => catStore.model.microphoneSmoothing, (smoothing) => {
     if (analyser.value) {
       analyser.value.smoothingTimeConstant = smoothing / 100
     }
-  })
+  }, { immediate: true })
 
   // 清理
   onUnmounted(() => {
