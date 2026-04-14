@@ -21,13 +21,6 @@ const catStore = useCatStore()
     </ProListItem>
 
     <ProListItem
-      :description="$t('pages.preference.cat.hints.singleMode')"
-      :title="$t('pages.preference.cat.labels.singleMode')"
-    >
-      <Switch v-model:checked="catStore.model.single" />
-    </ProListItem>
-
-    <ProListItem
       :description="$t('pages.preference.cat.hints.mouseMirror')"
       :title="$t('pages.preference.cat.labels.mouseMirror')"
     >
@@ -39,6 +32,13 @@ const catStore = useCatStore()
       :title="$t('pages.preference.cat.labels.motionSound')"
     >
       <Switch v-model:checked="catStore.model.motionSound" />
+    </ProListItem>
+
+    <ProListItem
+      :description="$t('pages.preference.cat.hints.behavior')"
+      :title="$t('pages.preference.cat.labels.behavior')"
+    >
+      <Switch v-model:checked="catStore.model.behavior" />
     </ProListItem>
 
     <ProListItem
